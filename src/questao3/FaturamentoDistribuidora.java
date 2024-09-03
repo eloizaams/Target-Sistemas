@@ -22,8 +22,12 @@ public class FaturamentoDistribuidora {
 			// Carregar dados do arquivo JSON
 			Gson gson = new Gson();
 	        Type listType = new TypeToken<ArrayList<Faturamento>>(){}.getType();
+<<<<<<< HEAD
 	        faturamentos = gson.fromJson(new FileReader("json/dados.json"), listType);
 	        
+=======
+	        faturamentos = gson.fromJson(new FileReader("json/faturamento.json"), listType);
+>>>>>>> 32d9c163a05020e1d2203bba11dec98c4ce8ed6e
 	        
 	        // Calcular menor, maior valor e soma dos valores
 	          for (Faturamento f : faturamentos) {
